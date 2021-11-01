@@ -1,0 +1,411 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-01T00:40:08.062Z",
+    "end": "2021-11-01T00:40:08.084Z",
+    "duration": 22,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c500d2c7-d94f-4c9e-ae92-648d534ba9b4",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64b183c4-db4b-4cb7-b1af-ba726d566126",
+          "title": "is addition positive case",
+          "fullFile": "C:\\Project\\LEARNING\\Unit-Testing-Framework\\test\\specs\\calculator\\add.spec.js",
+          "file": "\\test\\specs\\calculator\\add.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"is addition positive case\"",
+              "fullTitle": "is addition positive case \"before each\" hook in \"is addition positive case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = new Calculator();",
+              "err": {},
+              "uuid": "3a1ae13a-450f-484a-8a05-22abb56bf458",
+              "parentUUID": "64b183c4-db4b-4cb7-b1af-ba726d566126",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"is addition positive case\"",
+              "fullTitle": "is addition positive case \"after each\" hook in \"is addition positive case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = null;",
+              "err": {},
+              "uuid": "0f40a8af-f1fe-4023-a8e3-e294df7125cf",
+              "parentUUID": "64b183c4-db4b-4cb7-b1af-ba726d566126",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return the result of addition the transmitted numbers",
+              "fullTitle": "is addition positive case should return the result of addition the transmitted numbers",
+              "timedOut": false,
+              "duration": 2,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.add(2, 8)).to.be.equal(10);",
+              "err": {
+                "message": "AssertionError: expected NaN to equal 10",
+                "estack": "AssertionError: expected NaN to equal 10\n    at Context.<anonymous> (test\\specs\\calculator\\add.spec.js:14:41)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": "- NaN\n+ 10\n"
+              },
+              "uuid": "7533b90d-77eb-4b96-b58a-24a38c2cf78e",
+              "parentUUID": "64b183c4-db4b-4cb7-b1af-ba726d566126",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7533b90d-77eb-4b96-b58a-24a38c2cf78e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "63964fae-0cee-4c77-8c00-08159d156b21",
+          "title": "is addition negative case",
+          "fullFile": "C:\\Project\\LEARNING\\Unit-Testing-Framework\\test\\specs\\calculator\\add.spec.js",
+          "file": "\\test\\specs\\calculator\\add.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"is addition negative case\"",
+              "fullTitle": "is addition negative case \"before each\" hook in \"is addition negative case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = new Calculator();",
+              "err": {},
+              "uuid": "1b775193-10db-4d64-8d6f-bc1f4ab01f79",
+              "parentUUID": "63964fae-0cee-4c77-8c00-08159d156b21",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"is addition negative case\"",
+              "fullTitle": "is addition negative case \"after each\" hook in \"is addition negative case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "number = null;",
+              "err": {},
+              "uuid": "9d05b3ae-0b46-4dd3-8517-6c532b9020e1",
+              "parentUUID": "63964fae-0cee-4c77-8c00-08159d156b21",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should not return a result of addition if first of the values is not of type \"number\"",
+              "fullTitle": "is addition negative case should not return a result of addition if first of the values is not of type \"number\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.add('qw', 2)).to.be.NaN;",
+              "err": {},
+              "uuid": "bbc456af-a1e8-4144-aaae-0fd59b41c76d",
+              "parentUUID": "63964fae-0cee-4c77-8c00-08159d156b21",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should not return a result of addition  if second of the values is not of type \"number\"",
+              "fullTitle": "is addition negative case should not return a result of addition  if second of the values is not of type \"number\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.add(2, 'qw')).to.be.NaN;",
+              "err": {},
+              "uuid": "16a643ef-d909-489b-a05c-aec6e4eb8cd0",
+              "parentUUID": "63964fae-0cee-4c77-8c00-08159d156b21",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bbc456af-a1e8-4144-aaae-0fd59b41c76d",
+            "16a643ef-d909-489b-a05c-aec6e4eb8cd0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "12719a98-49eb-413a-a187-992dafe7ba95",
+          "title": "is multiply positive case",
+          "fullFile": "C:\\Project\\LEARNING\\Unit-Testing-Framework\\test\\specs\\calculator\\multiply.spec.js",
+          "file": "\\test\\specs\\calculator\\multiply.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"is multiply positive case\"",
+              "fullTitle": "is multiply positive case \"before each\" hook in \"is multiply positive case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = new Calculator(2, 3);",
+              "err": {},
+              "uuid": "c08ffd38-d1e9-4632-95c5-24e7fbefeb81",
+              "parentUUID": "12719a98-49eb-413a-a187-992dafe7ba95",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"is multiply positive case\"",
+              "fullTitle": "is multiply positive case \"after each\" hook in \"is multiply positive case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = null;",
+              "err": {},
+              "uuid": "c5e56255-0b1f-4240-8ad1-a5eb0d5a702a",
+              "parentUUID": "12719a98-49eb-413a-a187-992dafe7ba95",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return the result of multiplying the transmitted numbers",
+              "fullTitle": "is multiply positive case should return the result of multiplying the transmitted numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.multiply()).to.be.equal(6);",
+              "err": {},
+              "uuid": "17933789-c9f3-4a93-9eff-8831f62f748d",
+              "parentUUID": "12719a98-49eb-413a-a187-992dafe7ba95",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17933789-c9f3-4a93-9eff-8831f62f748d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ae101de1-d888-4f0c-bbcf-9f997340b6ce",
+          "title": "is multiply negative case",
+          "fullFile": "C:\\Project\\LEARNING\\Unit-Testing-Framework\\test\\specs\\calculator\\multiply.spec.js",
+          "file": "\\test\\specs\\calculator\\multiply.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"is multiply negative case\"",
+              "fullTitle": "is multiply negative case \"before each\" hook in \"is multiply negative case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "numbers = new Calculator();",
+              "err": {},
+              "uuid": "fc59574c-15c3-481a-a68f-c4f87562632d",
+              "parentUUID": "ae101de1-d888-4f0c-bbcf-9f997340b6ce",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"is multiply negative case\"",
+              "fullTitle": "is multiply negative case \"after each\" hook in \"is multiply negative case\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "number = null;",
+              "err": {},
+              "uuid": "571522bf-513d-412e-8050-b2e3c0164343",
+              "parentUUID": "ae101de1-d888-4f0c-bbcf-9f997340b6ce",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should not return a result of multiplying if first of the values is not of type number",
+              "fullTitle": "is multiply negative case should not return a result of multiplying if first of the values is not of type number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.multiply('qw', 2)).to.be.NaN;",
+              "err": {},
+              "uuid": "0ef44566-f4f1-470f-bd73-e5097469797e",
+              "parentUUID": "ae101de1-d888-4f0c-bbcf-9f997340b6ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should not return a result of multiplying if second of the values is not of type number",
+              "fullTitle": "is multiply negative case should not return a result of multiplying if second of the values is not of type number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(numbers.multiply(2, 'qw')).to.be.NaN;",
+              "err": {},
+              "uuid": "cd970061-a61e-4b6d-b30e-16e611312838",
+              "parentUUID": "ae101de1-d888-4f0c-bbcf-9f997340b6ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ef44566-f4f1-470f-bd73-e5097469797e",
+            "cd970061-a61e-4b6d-b30e-16e611312838"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

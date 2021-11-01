@@ -1,0 +1,22 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "google"
+        // "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "linebreak-style": ["error", "windows"],
+        "space-before-function-paren": ["error", "always"],
+        "indent": ["error", 4, { "SwitchCase": 4 }],
+        "object-curly-spacing": ["error", "always"],
+        "max-len": ["error", { "ignoreStrings": true }]
+    }
+}
