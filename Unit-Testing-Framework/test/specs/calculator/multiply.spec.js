@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-/* eslint-disable linebreak-style */
 const Calculator = require('../../../app/calculator.js');
 const { expect } = require('chai');
 
