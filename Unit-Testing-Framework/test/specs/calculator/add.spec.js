@@ -14,10 +14,8 @@ describe('Function add for Calculator', function () {
         calc = new Calculator();
     });
     arrForAdd.forEach(({ arg1, arg2, result }) => {
-        describe('Function add for Calculator', function () {
-            it(`should return ${result} when arg1 = ${arg1} and arg2 = ${arg2}`, function () {
-                expect(calc.add(arg1, arg2)).to.be.equal(result);
-            });
+        it(`should return ${result} when arg1 = ${arg1} and arg2 = ${arg2}`, function () {
+            expect(calc.add(arg1, arg2)).to.be.equal(result);
         });
     });
     it('should return the error message when at least one of the arguments is not of type "number"', function () {
