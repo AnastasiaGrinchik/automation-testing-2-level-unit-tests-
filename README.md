@@ -1,5 +1,15 @@
 # automation-testing-2-level
 
+## Module, Exports and Require
+### Практические задания:
+Объявить и присвоить значение переменной в одном файле и вывести в консоль эту переменную в другом файле.
+
+Задание выполняется с помощью nodeJS.
+1. Зайти в главный файл script.js
+2. Запустить start debugging (F5).
+
+
+
 ## Unit Testing Framework
 ### Практические задания:
 1. Создайте класс калькулятора со следующими методами:
@@ -18,11 +28,4 @@
 
 [Cкриншоты покрытия](https://github.com/AnastasiaStreltsova/automation-testing-2-level/blob/unit-testing/Unit-Testing-Framework/coverage-screenshot-2.jpg)
 
-## Module, Exports and Require
-### Практические задания:
-Объявить и присвоить значение переменной в одном файле и вывести в консоль эту переменную в другом файле.
-
-Задание выполняется с помощью nodeJS.
-1. Зайти в главный файл script.js
-2. Запустить start debugging (F5).
 
