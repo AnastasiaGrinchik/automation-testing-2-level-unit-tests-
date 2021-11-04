@@ -5,38 +5,34 @@
  */
 class Calculator {
     /**
-     * Creates an instance of Calculator.
-     * @param {number} numberOne is first number
-     * @param {number} numberTwo is second number
+     *
+     *
+     * @param {number} numberOne
+     * @param {number} numberTwo
+     * @return {number} is result of addition the numbers: numberOne and numberTwo
      * @memberof Calculator
      */
-    constructor(numberOne, numberTwo) {
-        this.numberOne = numberOne;
-        this.numberTwo = numberTwo;
+    add (numberOne, numberTwo) {
+        if (typeof numberOne === 'number' && typeof numberTwo === 'number') {
+            return numberOne + numberTwo;
+        } else {
+            throw new Error('The entered parameters are not numbers');
+        }
     }
-
     /**
      *
      *
      * @param {number} numberOne
      * @param {number} numberTwo
-     * @return {number} is addition  of numbers: numberOne and numberTwo
+     * @return {number} is result of multiplication the numbers: numberOne and numberTwo
      * @memberof Calculator
      */
-    add(numberOne, numberTwo) {
-        return numberOne + numberTwo;
-    }
-
-    /**
-     *
-     *
-     * @param {number} numberOne
-     * @param {number} numberTwo
-     * @return {number} is mupliply of numbers: numberOne and numberTwo
-     * @memberof Calculator
-     */
-    multiply(numberOne, numberTwo) {
-        return numberOne * numberTwo;
+    multiply (numberOne, numberTwo) {
+        if (typeof numberOne === 'number' && typeof numberTwo === 'number') {
+            return numberOne * numberTwo;
+        } else {
+            throw new Error('The entered parameters are not numbers');
+        }
     }
 }
 
